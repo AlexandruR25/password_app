@@ -1,9 +1,3 @@
-// ------------------------------------------------------------------------------
-// Fișier: main.cpp — Comentarii adăugate pentru claritate (fără modificări de logică)
-// Scop: parte din proiectul 'Password Policies' — verificarea parolelor pe baza
-// unui set de reguli configurabile (length, class, include, ninclude, repetition, consecutive).
-// NOTĂ: Am păstrat codul tău original; am adăugat doar comentarii.
-// ------------------------------------------------------------------------------
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -169,41 +163,6 @@ private:
 public:
     ConsecutivePolicy(uint16_t maxCount) : maxCount(maxCount) {}
 
-//    void check(const string &str) override {
-//        isChecked = true;
-//        int nr_consecutive = 0;
-//        for (int i = 0; i < str.size(); i++)
-//            if (str[i] < 58 && str[i] > 47) {
-//                nr_consecutive++;
-//                if (nr_consecutive > maxCount)
-//                    isChecked = false;
-//            } else
-//                nr_consecutive = 0;
-//        nr_consecutive = 0;
-//        for (int i = 0; i < str.size(); i++)
-//            if (str[i] < 91 && str[i] > 64) {
-//                nr_consecutive++;
-//                if (nr_consecutive > maxCount)
-//                    isChecked = false;
-//            } else
-//                nr_consecutive = 0;
-//        nr_consecutive = 0;
-//        for (int i = 0; i < str.size(); i++)
-//            if (str[i] < 123 && str[i] > 93) {
-//                nr_consecutive++;
-//                if (nr_consecutive > maxCount)
-//                    isChecked = false;
-//            } else
-//                nr_consecutive = 0;
-//        nr_consecutive = 0;
-//        for (int i = 0; i < str.size(); i++)
-//            if (!((str[i] < 123 && str[i] > 93) || (str[i] < 91 && str[i] > 64) || (str[i] < 58 && str[i] > 47))) {
-//                nr_consecutive++;
-//                if (nr_consecutive > maxCount)
-//                    isChecked = false;
-//            } else
-//                nr_consecutive = 0;
-//    }
     void check(const string &str) override {
         isChecked = true;
         int nr_consecutive = 1;
